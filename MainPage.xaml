@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScrollViewSample.MainPage">
+
+    <VerticalStackLayout>
+   <Grid ColumnDefinitions="*, *" Margin="20" ColumnSpacing="20">
+        <Button Grid.Column="0" BackgroundColor="Red" Text="Scroll doesn't work" Clicked="FailButton_OnClicked"></Button>
+        <Button Grid.Column="1" BackgroundColor="Green" Text="Scroll works" Clicked="WorksButton_OnClicked"></Button>
+    </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>

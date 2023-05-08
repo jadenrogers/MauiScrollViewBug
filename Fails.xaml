@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScrollViewSample.Fails"
+             Title="Fails">
+
+    <Grid RowDefinitions="Auto, *" BackgroundColor="Azure">
+        <Image Grid.Row="0" HeightRequest="200" Source="dotnet_bot"></Image>
+
+
+        <Border Grid.Row="1" BackgroundColor="White">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="40,40,40,40" />
+            </Border.StrokeShape>
+            <ScrollView>
+                <VerticalStackLayout
+                    Spacing="25"
+                    Padding="30,0"
+                    VerticalOptions="Center">
+
+                    <Entry Placeholder="Entry 1"></Entry>
+                    <Entry Placeholder="Entry 2"></Entry>
+                    <Entry Placeholder="Entry 3"></Entry>
+                    <Entry Placeholder="Entry 4"></Entry>
+                    <Entry Placeholder="Entry 5"></Entry>
+                    <Entry Placeholder="Entry 6"></Entry>
+                    <Entry Placeholder="Entry 7"></Entry>
+                    <Entry Placeholder="Entry 8"></Entry>
+                    <Entry Placeholder="Entry 9"></Entry>
+                    <Entry Placeholder="Entry 10"></Entry>
+
+                    <Button
+                        x:Name="CounterBtn"
+                        Text="A button"
+                        HorizontalOptions="Center" />
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+    </Grid>
+</ContentPage>
